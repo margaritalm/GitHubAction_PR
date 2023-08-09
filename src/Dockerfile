@@ -35,6 +35,8 @@ FROM alpine:3.16
 ARG COMMIT_SHA
 ARG RELEASE_TAG
 
+
+
 LABEL cx.commit-sha=${COMMIT_SHA}
 LABEL cx.release-tag=${RELEASE_TAG}
 
