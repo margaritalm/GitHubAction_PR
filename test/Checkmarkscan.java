@@ -15,6 +15,7 @@ public class Checkmarkscan {
     @RequestMapping(value = "/checkmark")
     public String viewGISLandingPage(HttpServletRequest request, HttpServletResponse response, Model model)
              {
+                  String username = request.getParameter("username");
         try {
             String username = request.getParameter("username");
             Connection conn = DriverManager.getConnection("jdbc:", username, "password");
