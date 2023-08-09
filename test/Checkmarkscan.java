@@ -15,7 +15,21 @@ public class Checkmarkscan {
     @RequestMapping(value = "/checkmark")
     public String viewGISLandingPage(HttpServletRequest request, HttpServletResponse response, Model model)
              {
-                  String username = request.getParameter("username");
+        try {
+            String username = request.getParameter("username");
+            Connection conn = DriverManager.getConnection("jdbc:", username, "password");
+// Create a statement from database connection
+            Statement statement = conn.createStatement();
+// Create unsafe query by concatenating user defined data with query string
+            String query = "SELECT secret FROM Users WHERE (username = '" + username + "' AND NOT role = 'admin')";
+
+            ResultSet result = statement.executeQuery(query);
+        } catch (Exception e) {
+            GISLog.error(e.getMessage());
+        }
+        return null;
+    }
+             {
         try {
             String username = request.getParameter("username");
             Connection conn = DriverManager.getConnection("jdbc:", username, "password");
