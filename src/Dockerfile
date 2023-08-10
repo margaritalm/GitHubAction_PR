@@ -37,6 +37,9 @@ ARG RELEASE_TAG
 
 
 
+
+
+
 LABEL cx.commit-sha=${COMMIT_SHA}
 LABEL cx.release-tag=${RELEASE_TAG}
 
