@@ -17,5 +17,4 @@ public class SQLInjection
 		string input = Console.ReadLine();
 		tb.Text = input;
 	}
-
 }
