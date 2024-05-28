@@ -6,6 +6,10 @@ import org.apache.jasper.runtime.*;
 public class BookDetail_jsp extends HttpJspBase {
 
 
+
+
+
+  
 //
 //   Filename: Common.jsp
 //   Generated with CodeCharge  v.1.2.0
