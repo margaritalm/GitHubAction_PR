@@ -20,7 +20,7 @@ jobs:
       - name: Checkmarx One CLI Action
         uses: checkmarx/ast-github-action@main
         with:
-          project_name: Margarita_newGithubProject
+          project_name: aeco-bim-ige-xao-rnd-poland/igexao_poland_see_log
           cx_tenant: Cx_Seg
           base_uri: https://eu.ast.checkmarx.net
           cx_client_id: ${{ secrets.CLIENT_ID }}
