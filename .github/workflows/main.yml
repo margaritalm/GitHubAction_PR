@@ -7,7 +7,6 @@ on:
         - master
         - dev
         - NewMainNotExp
-        - 4.00.2
         
 env:
  # platforms: Dockerfile
