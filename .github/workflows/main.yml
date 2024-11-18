@@ -8,6 +8,7 @@ on:
         - dev
         - NewMainNotExp
         - 4.00.2
+        
 env:
  # platforms: Dockerfile
   scanTypes: iac-security,sast,sca
